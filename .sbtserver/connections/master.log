@@ -1,0 +1,7 @@
+New log file opened at Thu May 07 10:31:57 JST 2015 by 2880@Les-iMac.local
+Taking next connection to: 49921
+New client attempting to connect on port: 49922-49921
+  Address = /192.168.1.20:49921
+This client on port 49922 has uuid 936c3e54-c8d0-40d1-ae48-5241853ab23d configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-936c3e54-c8d0-40d1-ae48-5241853ab23d
+Taking next connection to: 49921

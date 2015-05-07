@@ -1,0 +1,1479 @@
+New log file opened at Thu May 07 10:31:57 JST 2015 by 2880@Les-iMac.local
+jvm 2880@Les-iMac.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.40-b25
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/AnhLH/Server/hello-scala
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/AnhLH/Server/hello-scala/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/AnhLH/Server/hello-scala/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/AnhLH/Server/hello-scala/project, returning: (hello-scala-build)
+Loading project definition from /Users/AnhLH/Server/hello-scala/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2670c089, check cycles: false
+[info] Updating {file:/Users/AnhLH/Server/hello-scala/project/}hello-scala-build...
+Updating {file:/Users/AnhLH/Server/hello-scala/project/}hello-scala-build...
+Other repositories:
+Default repositories:
+Using inline dependencies specified in Scala.
+:: resolving dependencies :: default#hello-scala-build;0.1-SNAPSHOT
+	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+	validate = true
+	refresh = false
+resolving dependencies for configuration 'compile'
+== resolving dependencies for default#hello-scala-build;0.1-SNAPSHOT [compile]
+== resolving dependencies default#hello-scala-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)]
+[info] Resolving com.typesafe.play#sbt-fork-run-plugin;2.3.8 ...
+Resolving com.typesafe.play#sbt-fork-run-plugin;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-plugin;2.3.8 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-fork-run-plugin;2.3.8 ...
+Resolving com.typesafe.play#sbt-fork-run-plugin;2.3.8 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-plugin;2.3.8 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for com.typesafe.play#sbt-fork-run-plugin;2.3.8
+		=> https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml (2.3.8)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.play#sbt-fork-run-plugin;2.3.8!ivy.xml(ivy.original) (2852ms)
+	found com.typesafe.play#sbt-fork-run-plugin;2.3.8 in typesafe-ivy-releases
+== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 ...
+Resolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 ...
+Resolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8
+		tried /doesnotexist/repository/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.8/ivys/ivy.xml (2.3.8)
+	[NOT REQUIRED] com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8!ivy.xml(ivy.original)
+	found com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 in activator-local
+== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+[A[2K[info] Resolving org.scala-lang#scala-library;2.10.4 ...
+Resolving org.scala-lang#scala-library;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
+	found org.scala-lang#scala-library;2.10.4 in sbt-chain
+	[2.10.4] org.scala-lang#scala-library;2.10.4
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#sbt-run-support_2.10;2.3.8 ...
+Resolving com.typesafe.play#sbt-run-support_2.10;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.3.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-run-support_2.10;2.3.8 ...
+Resolving com.typesafe.play#sbt-run-support_2.10;2.3.8 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.3.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.8
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.8
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.8
+		tried /doesnotexist/repository/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.8
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#sbt-run-support_2.10;2.3.8
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/sbt-run-support_2.10/2.3.8/ivys/ivy.xml (2.3.8)
+	[NOT REQUIRED] com.typesafe.play#sbt-run-support_2.10;2.3.8!ivy.xml(ivy.original)
+	found com.typesafe.play#sbt-run-support_2.10;2.3.8 in activator-local
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->com.typesafe.play#build-link;2.3.8 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#build-link;2.3.8 ...
+Resolving com.typesafe.play#build-link;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.3.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe.play#build-link;2.3.8
+	found com.typesafe.play#build-link;2.3.8 in sbt-chain
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->com.typesafe.play#build-link;2.3.8 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#play-exceptions;2.3.8 ...
+Resolving com.typesafe.play#play-exceptions;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.3.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.3.8
+	found com.typesafe.play#play-exceptions;2.3.8 in sbt-chain
+== resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [compile->master(compile)]
+[A[2K[info] Resolving org.javassist#javassist;3.18.2-GA ...
+Resolving org.javassist#javassist;3.18.2-GA ...
+sbt-chain: Checking cache for: dependency: org.javassist#javassist;3.18.2-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.javassist#javassist;3.18.2-GA
+	found org.javassist#javassist;3.18.2-GA in sbt-chain
+== resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->com.typesafe.play#build-link;2.3.8 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.8->com.typesafe.play#build-link;2.3.8 [runtime->compile]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->com.typesafe.play#play-exceptions;2.3.8 [runtime->compile]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#build-link;2.3.8->org.javassist#javassist;3.18.2-GA [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.sbtrc#client-2-10;0.3.1 ...
+Resolving com.typesafe.sbtrc#client-2-10;0.3.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#client-2-10;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.sbtrc#client-2-10;0.3.1 ...
+Resolving com.typesafe.sbtrc#client-2-10;0.3.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbtrc#client-2-10;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for com.typesafe.sbtrc#client-2-10;0.3.1
+		=> https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml (0.3.1)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbtrc/client-2-10/0.3.1/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbtrc#client-2-10;0.3.1!ivy.xml(ivy.original) (2851ms)
+	found com.typesafe.sbtrc#client-2-10;0.3.1 in typesafe-ivy-releases
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-reflect;2.10.4 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
+Resolving org.scala-lang#scala-reflect;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4
+	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain
+	[2.10.4] org.scala-lang#scala-reflect;2.10.4
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-reflect;2.10.4 [compile->runtime]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-reflect;2.10.4 [compile->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-reflect;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-sbt#serialization_2.10;0.1.0 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#serialization_2.10;0.1.0 ...
+Resolving org.scala-sbt#serialization_2.10;0.1.0 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#serialization_2.10;0.1.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.scala-sbt#serialization_2.10;0.1.0
+	found org.scala-sbt#serialization_2.10;0.1.0 in sbt-chain
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-lang.modules#scala-pickling_2.10;0.10.0 ...
+Resolving org.scala-lang.modules#scala-pickling_2.10;0.10.0 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-pickling_2.10;0.10.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-pickling_2.10;0.10.0
+	found org.scala-lang.modules#scala-pickling_2.10;0.10.0 in sbt-chain
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->runtime]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [compile->master(compile)]
+[A[2K[info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
+Resolving org.scala-lang#scala-compiler;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
+	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [compile->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [compile->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [compile->master(compile)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->master(compile)]
+[A[2K[info] Resolving org.scalamacros#quasiquotes_2.10;2.0.1 ...
+Resolving org.scalamacros#quasiquotes_2.10;2.0.1 ...
+sbt-chain: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1
+	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-compiler;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-pickling_2.10;0.10.0->org.scalamacros#quasiquotes_2.10;2.0.1 [runtime->compile]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.scala-lang.modules#scala-pickling_2.10;0.10.0 [compile->master]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->default(compile)]
+[A[2K[info] Resolving org.json4s#json4s-core_2.10;3.2.10 ...
+Resolving org.json4s#json4s-core_2.10;3.2.10 ...
+sbt-chain: Checking cache for: dependency: org.json4s#json4s-core_2.10;3.2.10 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.10
+	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->runtime]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.json4s#json4s-ast_2.10;3.2.10 ...
+Resolving org.json4s#json4s-ast_2.10;3.2.10 ...
+sbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10
+	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->runtime(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.json4s#json4s-ast_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
+Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
+sbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
+	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->runtime(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+excluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->runtime(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [runtime->compile]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->runtime(*)]
+== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [runtime->compile]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.json4s#json4s-core_2.10;3.2.10 [compile->master]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->default(compile)]
+[A[2K[info] Resolving org.spire-math#jawn-parser_2.10;0.6.0 ...
+Resolving org.spire-math#jawn-parser_2.10;0.6.0 ...
+sbt-chain: Checking cache for: dependency: org.spire-math#jawn-parser_2.10;0.6.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.spire-math#jawn-parser_2.10;0.6.0
+	found org.spire-math#jawn-parser_2.10;0.6.0 in sbt-chain
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile]
+== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.spire-math#jawn-parser_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->default(compile)]
+[A[2K[info] Resolving org.spire-math#json4s-support_2.10;0.6.0 ...
+Resolving org.spire-math#json4s-support_2.10;0.6.0 ...
+sbt-chain: Checking cache for: dependency: org.spire-math#json4s-support_2.10;0.6.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.spire-math#json4s-support_2.10;0.6.0
+	found org.spire-math#json4s-support_2.10;0.6.0 in sbt-chain
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->runtime]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->compile]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->master(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->runtime(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [compile->compile]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [runtime->runtime(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.spire-math#jawn-parser_2.10;0.6.0 [runtime->compile]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [runtime->runtime(*)]
+== resolving dependencies org.spire-math#json4s-support_2.10;0.6.0->org.json4s#json4s-ast_2.10;3.2.10 [runtime->compile]
+== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-sbt#launcher-interface;0.13.8-M3 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#launcher-interface;0.13.8-M3 ...
+Resolving org.scala-sbt#launcher-interface;0.13.8-M3 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#launcher-interface;0.13.8-M3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scala-sbt#launcher-interface;0.13.8-M3 ...
+Resolving org.scala-sbt#launcher-interface;0.13.8-M3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scala-sbt#launcher-interface;0.13.8-M3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for org.scala-sbt#launcher-interface;0.13.8-M3
+		=> https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml (0.13.8-M3)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.13.8-M3/ivys/ivy.xml
+	[SUCCESSFUL ] org.scala-sbt#launcher-interface;0.13.8-M3!ivy.xml(ivy.original) (2844ms)
+	found org.scala-sbt#launcher-interface;0.13.8-M3 in typesafe-ivy-releases
+== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#launcher-interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-sbt#interface;0.13.8-M3 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#interface;0.13.8-M3 ...
+Resolving org.scala-sbt#interface;0.13.8-M3 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#interface;0.13.8-M3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scala-sbt#interface;0.13.8-M3 ...
+Resolving org.scala-sbt#interface;0.13.8-M3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scala-sbt#interface;0.13.8-M3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for org.scala-sbt#interface;0.13.8-M3
+		=> https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml (0.13.8-M3)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.8-M3/ivys/ivy.xml
+	[SUCCESSFUL ] org.scala-sbt#interface;0.13.8-M3!ivy.xml(ivy.original) (2896ms)
+	found org.scala-sbt#interface;0.13.8-M3 in typesafe-ivy-releases
+	[0.13.8-M3] org.scala-sbt#interface;0.13.8-M3
+== resolving dependencies org.scala-sbt#interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#interface;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-sbt#io;0.13.8-M3 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#io;0.13.8-M3 ...
+Resolving org.scala-sbt#io;0.13.8-M3 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#io;0.13.8-M3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scala-sbt#io;0.13.8-M3 ...
+Resolving org.scala-sbt#io;0.13.8-M3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scala-sbt#io;0.13.8-M3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for org.scala-sbt#io;0.13.8-M3
+		=> https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml (0.13.8-M3)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.8-M3/ivys/ivy.xml
+	[SUCCESSFUL ] org.scala-sbt#io;0.13.8-M3!ivy.xml(ivy.original) (2879ms)
+	found org.scala-sbt#io;0.13.8-M3 in typesafe-ivy-releases
+== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies org.scala-sbt#io;0.13.8-M3->org.scala-sbt#control;0.13.8-M3 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#control;0.13.8-M3 ...
+Resolving org.scala-sbt#control;0.13.8-M3 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#control;0.13.8-M3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scala-sbt#control;0.13.8-M3 ...
+Resolving org.scala-sbt#control;0.13.8-M3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scala-sbt#control;0.13.8-M3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for org.scala-sbt#control;0.13.8-M3
+		=> https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml (0.13.8-M3)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.8-M3/ivys/ivy.xml
+	[SUCCESSFUL ] org.scala-sbt#control;0.13.8-M3!ivy.xml(ivy.original) (2846ms)
+	found org.scala-sbt#control;0.13.8-M3 in typesafe-ivy-releases
+== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#control;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-sbt#collections;0.13.8-M3 [compile->default(compile)]
+[A[2K[info] Resolving org.scala-sbt#collections;0.13.8-M3 ...
+Resolving org.scala-sbt#collections;0.13.8-M3 ...
+sbt-chain: Checking cache for: dependency: org.scala-sbt#collections;0.13.8-M3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scala-sbt#collections;0.13.8-M3 ...
+Resolving org.scala-sbt#collections;0.13.8-M3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scala-sbt#collections;0.13.8-M3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for org.scala-sbt#collections;0.13.8-M3
+		=> https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml (0.13.8-M3)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.8-M3/ivys/ivy.xml
+	[SUCCESSFUL ] org.scala-sbt#collections;0.13.8-M3!ivy.xml(ivy.original) (2858ms)
+	found org.scala-sbt#collections;0.13.8-M3 in typesafe-ivy-releases
+== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
+== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime]
+== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#sbt-plugin;2.3.8 ...
+Resolving com.typesafe.play#sbt-plugin;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.8 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-plugin;2.3.8 ...
+Resolving com.typesafe.play#sbt-plugin;2.3.8 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.8 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for com.typesafe.play#sbt-plugin;2.3.8
+		=> https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml (2.3.8)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.8/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.3.8!ivy.xml(ivy.original) (2941ms)
+	found com.typesafe.play#sbt-plugin;2.3.8 in typesafe-ivy-releases
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#routes-compiler_2.10;2.3.8 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#routes-compiler_2.10;2.3.8 ...
+Resolving com.typesafe.play#routes-compiler_2.10;2.3.8 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.3.8 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#routes-compiler_2.10;2.3.8 ...
+Resolving com.typesafe.play#routes-compiler_2.10;2.3.8 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.3.8 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.8
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.8
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.8
+		tried /doesnotexist/repository/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.8
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#routes-compiler_2.10;2.3.8
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/routes-compiler_2.10/2.3.8/ivys/ivy.xml (2.3.8)
+	[NOT REQUIRED] com.typesafe.play#routes-compiler_2.10;2.3.8!ivy.xml(ivy.original)
+	found com.typesafe.play#routes-compiler_2.10;2.3.8 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#routes-compiler_2.10;2.3.8 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#routes-compiler_2.10;2.3.8 [compile->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [compile->master(compile)]
+[A[2K[info] Resolving commons-io#commons-io;2.0.1 ...
+Resolving commons-io#commons-io;2.0.1 ...
+sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: commons-io#commons-io;2.0.1
+	found commons-io#commons-io;2.0.1 in sbt-chain
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [compile->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.8->commons-io#commons-io;2.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#routes-compiler_2.10;2.3.8 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->default(compile)]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe#config;1.2.1 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe#config;1.2.1 ...
+Resolving com.typesafe#config;1.2.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
+	found com.typesafe#config;1.2.1 in sbt-chain
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe#config;1.2.1 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe#config;1.2.1 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe#config;1.2.1 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.mozilla#rhino;1.7R4 [compile->default(compile)]
+[A[2K[info] Resolving org.mozilla#rhino;1.7R4 ...
+Resolving org.mozilla#rhino;1.7R4 ...
+sbt-chain: Checking cache for: dependency: org.mozilla#rhino;1.7R4 {compile=[default(compile)]}
+[A[2K[info] Resolving org.mozilla#rhino;1.7R4 ...
+Resolving org.mozilla#rhino;1.7R4 ...
+sbt-chain-delegate: Checking cache for: dependency: org.mozilla#rhino;1.7R4 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.mozilla#rhino;1.7R4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.mozilla#rhino;1.7R4
+		tried /Users/AnhLH/.ivy2/local/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+	local: no ivy file found for org.mozilla#rhino;1.7R4
+		tried /doesnotexist/repository/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.mozilla#rhino;1.7R4
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.mozilla/rhino/1.7R4/ivys/ivy.xml
+	activator-local: found md file for org.mozilla#rhino;1.7R4
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.mozilla/rhino/1.7R4/ivys/ivy.xml (1.7R4)
+	[NOT REQUIRED] org.mozilla#rhino;1.7R4!ivy.xml(ivy.original)
+	found org.mozilla#rhino;1.7R4 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.mozilla#rhino;1.7R4 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.mozilla#rhino;1.7R4 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.mozilla#rhino;1.7R4 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)]
+[A[2K[info] Resolving com.google.javascript#closure-compiler;v20130603 ...
+Resolving com.google.javascript#closure-compiler;v20130603 ...
+sbt-chain: Checking cache for: dependency: com.google.javascript#closure-compiler;v20130603 {compile=[default(compile)]}
+[A[2K[info] Resolving com.google.javascript#closure-compiler;v20130603 ...
+Resolving com.google.javascript#closure-compiler;v20130603 ...
+sbt-chain-delegate: Checking cache for: dependency: com.google.javascript#closure-compiler;v20130603 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.google.javascript#closure-compiler;v20130603
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.google.javascript#closure-compiler;v20130603
+		tried /Users/AnhLH/.ivy2/local/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+	local: no ivy file found for com.google.javascript#closure-compiler;v20130603
+		tried /doesnotexist/repository/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.google.javascript#closure-compiler;v20130603
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml
+	activator-local: found md file for com.google.javascript#closure-compiler;v20130603
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.google.javascript/closure-compiler/v20130603/ivys/ivy.xml (v20130603)
+	[NOT REQUIRED] com.google.javascript#closure-compiler;v20130603!ivy.xml(ivy.original)
+	found com.google.javascript#closure-compiler;v20130603 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.javascript#closure-compiler;v20130603 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.javascript#closure-compiler;v20130603 [compile->compile]
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->com.google.guava#guava;14.0.1 [compile->master(*)]
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->com.google.guava#guava;14.0.1 [compile->compile(*)]
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [compile->master(*)]
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+[A[2K[info] Resolving org.json#json;20090211 ...
+Resolving org.json#json;20090211 ...
+sbt-chain: Checking cache for: dependency: org.json#json;20090211 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.json#json;20090211 ...
+Resolving org.json#json;20090211 ...
+sbt-chain-delegate: Checking cache for: dependency: org.json#json;20090211 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.json/json/20090211/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.json/json/20090211/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.json#json;20090211
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.json/json/20090211/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.json/json/20090211/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.json#json;20090211
+		tried /Users/AnhLH/.ivy2/local/org.json/json/20090211/ivys/ivy.xml
+	local: no ivy file found for org.json#json;20090211
+		tried /doesnotexist/repository/org.json/json/20090211/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.json#json;20090211
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.json/json/20090211/ivys/ivy.xml
+	activator-local: found md file for org.json#json;20090211
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.json/json/20090211/ivys/ivy.xml (20090211)
+	[NOT REQUIRED] org.json#json;20090211!ivy.xml(ivy.original)
+	found org.json#json;20090211 in activator-local
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [compile->compile(*)]
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [compile->runtime(*)]
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [compile->compile]
+excluding dependency: args4j#args4j;2.0.16 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+excluding dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->com.google.guava#guava;14.0.1 [runtime->runtime(*)]
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [runtime->runtime(*)]
+== resolving dependencies com.google.javascript#closure-compiler;v20130603->org.json#json;20090211 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.javascript#closure-compiler;v20130603 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->default(compile)]
+[A[2K[info] Resolving com.google.guava#guava;16.0.1 ...
+Resolving com.google.guava#guava;16.0.1 ...
+sbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.google.guava#guava;16.0.1
+	found com.google.guava#guava;16.0.1 in sbt-chain
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->master(*)]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.google.guava#guava;16.0.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)]
+[A[2K[info] Resolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...
+Resolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...
+sbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 {compile=[default(compile)]}
+[A[2K[info] Resolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...
+Resolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2
+		tried /Users/AnhLH/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+	local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2
+		tried /doesnotexist/repository/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml
+	activator-local: found md file for org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.2.2/ivys/ivy.xml (3.2.2)
+	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2!ivy.xml(ivy.original)
+	found org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.h2database#h2;1.3.175 [compile->default(compile)]
+[A[2K[info] Resolving com.h2database#h2;1.3.175 ...
+Resolving com.h2database#h2;1.3.175 ...
+sbt-chain: Checking cache for: dependency: com.h2database#h2;1.3.175 {compile=[default(compile)]}
+[A[2K[info] Resolving com.h2database#h2;1.3.175 ...
+Resolving com.h2database#h2;1.3.175 ...
+sbt-chain-delegate: Checking cache for: dependency: com.h2database#h2;1.3.175 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.3.175/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.3.175/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.h2database#h2;1.3.175
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.3.175/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.3.175/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.h2database#h2;1.3.175
+		tried /Users/AnhLH/.ivy2/local/com.h2database/h2/1.3.175/ivys/ivy.xml
+	local: no ivy file found for com.h2database#h2;1.3.175
+		tried /doesnotexist/repository/com.h2database/h2/1.3.175/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.h2database#h2;1.3.175
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.h2database/h2/1.3.175/ivys/ivy.xml
+	activator-local: found md file for com.h2database#h2;1.3.175
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.h2database/h2/1.3.175/ivys/ivy.xml (1.3.175)
+	[NOT REQUIRED] com.h2database#h2;1.3.175!ivy.xml(ivy.original)
+	found com.h2database#h2;1.3.175 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.h2database#h2;1.3.175 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.h2database#h2;1.3.175 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.h2database#h2;1.3.175 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.javassist#javassist;3.18.2-GA [compile->default(compile)]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.javassist#javassist;3.18.2-GA [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.javassist#javassist;3.18.2-GA [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->org.javassist#javassist;3.18.2-GA [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)]
+[A[2K[info] Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+sbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94 {compile=[default(compile)]}
+[A[2K[info] Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+Resolving net.contentobjects.jnotify#jnotify;0.94 ...
+sbt-chain-delegate: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for net.contentobjects.jnotify#jnotify;0.94
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for net.contentobjects.jnotify#jnotify;0.94
+		tried /Users/AnhLH/.ivy2/local/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+	local: no ivy file found for net.contentobjects.jnotify#jnotify;0.94
+		tried /doesnotexist/repository/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for net.contentobjects.jnotify#jnotify;0.94
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml
+	activator-local: found md file for net.contentobjects.jnotify#jnotify;0.94
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/net.contentobjects.jnotify/jnotify/0.94/ivys/ivy.xml (0.94)
+	[NOT REQUIRED] net.contentobjects.jnotify#jnotify;0.94!ivy.xml(ivy.original)
+	found net.contentobjects.jnotify#jnotify;0.94 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->net.contentobjects.jnotify#jnotify;0.94 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.sbt#sbt-twirl;1.0.2 ...
+Resolving com.typesafe.sbt#sbt-twirl;1.0.2 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-twirl;1.0.2 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbt#sbt-twirl;1.0.2 ...
+Resolving com.typesafe.sbt#sbt-twirl;1.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-twirl;1.0.2 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-twirl;1.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml
+	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-twirl;1.0.2
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml (1.0.2)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.0.2/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbt#sbt-twirl;1.0.2!ivy.xml(ivy.original) (2895ms)
+	found com.typesafe.sbt#sbt-twirl;1.0.2 in sbt-plugin-releases
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.0.2->com.typesafe.play#twirl-compiler_2.10;1.0.2 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#twirl-compiler_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-compiler_2.10;1.0.2 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-compiler_2.10;1.0.2 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-compiler_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-compiler_2.10;1.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-compiler_2.10;1.0.2 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.0.2
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.0.2
+		tried /doesnotexist/repository/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.0.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#twirl-compiler_2.10;1.0.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-compiler_2.10/1.0.2/ivys/ivy.xml (1.0.2)
+	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.10;1.0.2!ivy.xml(ivy.original)
+	found com.typesafe.play#twirl-compiler_2.10;1.0.2 in activator-local
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.0.2->com.typesafe.play#twirl-compiler_2.10;1.0.2 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.0.2->com.typesafe.play#twirl-compiler_2.10;1.0.2 [compile->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-compiler;2.10.4 [compile->master(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->master(*)]
+[A[2K[info] Resolving com.typesafe.play#twirl-api_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-api_2.10;1.0.2 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-api_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-api_2.10;1.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-api_2.10;1.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-api_2.10;1.0.2
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-api_2.10;1.0.2
+		tried /doesnotexist/repository/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#twirl-api_2.10;1.0.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#twirl-api_2.10;1.0.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-api_2.10/1.0.2/ivys/ivy.xml (1.0.2)
+	[NOT REQUIRED] com.typesafe.play#twirl-api_2.10;1.0.2!ivy.xml(ivy.original)
+	found com.typesafe.play#twirl-api_2.10;1.0.2 in activator-local
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [compile->master(*)]
+[A[2K[info] Resolving org.apache.commons#commons-lang3;3.1 ...
+Resolving org.apache.commons#commons-lang3;3.1 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-lang3;3.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.1
+	found org.apache.commons#commons-lang3;3.1 in sbt-chain
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [compile->compile]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.0.2->org.apache.commons#commons-lang3;3.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [compile->master(*)]
+[A[2K[info] Resolving com.typesafe.play#twirl-parser_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-parser_2.10;1.0.2 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-parser_2.10;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-parser_2.10;1.0.2 ...
+Resolving com.typesafe.play#twirl-parser_2.10;1.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-parser_2.10;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.0.2
+		tried /Users/AnhLH/.ivy2/local/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.0.2
+		tried /doesnotexist/repository/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.0.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml
+	activator-local: found md file for com.typesafe.play#twirl-parser_2.10;1.0.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.typesafe.play/twirl-parser_2.10/1.0.2/ivys/ivy.xml (1.0.2)
+	[NOT REQUIRED] com.typesafe.play#twirl-parser_2.10;1.0.2!ivy.xml(ivy.original)
+	found com.typesafe.play#twirl-parser_2.10;1.0.2 in activator-local
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [compile->compile]
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-compiler;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-compiler;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-api_2.10;1.0.2 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.0.2->com.typesafe.play#twirl-parser_2.10;1.0.2 [runtime->compile]
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.0.2->com.typesafe.play#twirl-compiler_2.10;1.0.2 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 ...
+Resolving com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 ...
+Resolving com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0
+		=> https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml (3.0.0)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0!ivy.xml(ivy.original) (2961ms)
+	found com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 in typesafe-ivy-releases
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0->com.typesafe.sbteclipse#sbteclipse-core;3.0.0 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbteclipse#sbteclipse-core;3.0.0 ...
+Resolving com.typesafe.sbteclipse#sbteclipse-core;3.0.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-core;3.0.0 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbteclipse#sbteclipse-core;3.0.0 ...
+Resolving com.typesafe.sbteclipse#sbteclipse-core;3.0.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-core;3.0.0 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	typesafe-ivy-releases: found md file for com.typesafe.sbteclipse#sbteclipse-core;3.0.0
+		=> https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml (3.0.0)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml ...
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	typesafe-ivy-releases: downloading https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml.sha1
+sha1 OK for https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbteclipse#sbteclipse-core;3.0.0!ivy.xml(ivy.original) (2884ms)
+	found com.typesafe.sbteclipse#sbteclipse-core;3.0.0 in typesafe-ivy-releases
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.scalaz#scalaz-core_2.10;7.0.2 ...
+Resolving org.scalaz#scalaz-core_2.10;7.0.2 ...
+sbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.0.2 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scalaz#scalaz-core_2.10;7.0.2 ...
+Resolving org.scalaz#scalaz-core_2.10;7.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.0.2 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.scalaz#scalaz-core_2.10;7.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.scalaz#scalaz-core_2.10;7.0.2
+		tried /Users/AnhLH/.ivy2/local/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+	local: no ivy file found for org.scalaz#scalaz-core_2.10;7.0.2
+		tried /doesnotexist/repository/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.scalaz#scalaz-core_2.10;7.0.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml
+	activator-local: found md file for org.scalaz#scalaz-core_2.10;7.0.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.scalaz/scalaz-core_2.10/7.0.2/ivys/ivy.xml (7.0.2)
+	[NOT REQUIRED] org.scalaz#scalaz-core_2.10;7.0.2!ivy.xml(ivy.original)
+	found org.scalaz#scalaz-core_2.10;7.0.2 in activator-local
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->master]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.3 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.scalaz#scalaz-effect_2.10;7.0.2 ...
+Resolving org.scalaz#scalaz-effect_2.10;7.0.2 ...
+sbt-chain: Checking cache for: dependency: org.scalaz#scalaz-effect_2.10;7.0.2 {compile=[default(compile)]}
+[A[2K[info] Resolving org.scalaz#scalaz-effect_2.10;7.0.2 ...
+Resolving org.scalaz#scalaz-effect_2.10;7.0.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.scalaz#scalaz-effect_2.10;7.0.2 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.scalaz#scalaz-effect_2.10;7.0.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.scalaz#scalaz-effect_2.10;7.0.2
+		tried /Users/AnhLH/.ivy2/local/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+	local: no ivy file found for org.scalaz#scalaz-effect_2.10;7.0.2
+		tried /doesnotexist/repository/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.scalaz#scalaz-effect_2.10;7.0.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml
+	activator-local: found md file for org.scalaz#scalaz-effect_2.10;7.0.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.scalaz/scalaz-effect_2.10/7.0.2/ivys/ivy.xml (7.0.2)
+	[NOT REQUIRED] org.scalaz#scalaz-effect_2.10;7.0.2!ivy.xml(ivy.original)
+	found org.scalaz#scalaz-effect_2.10;7.0.2 in activator-local
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->runtime]
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [compile->compile(*)]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime(*)]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [compile->compile]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [runtime->runtime(*)]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scalaz#scalaz-core_2.10;7.0.2 [runtime->compile]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;3.0.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)]
+[A[2K[info] Resolving com.github.mpeltonen#sbt-idea;1.5.1 ...
+Resolving com.github.mpeltonen#sbt-idea;1.5.1 ...
+sbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.5.1 {compile=[default(compile)]}
+[A[2K[info] Resolving com.github.mpeltonen#sbt-idea;1.5.1 ...
+Resolving com.github.mpeltonen#sbt-idea;1.5.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.5.1 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.github.mpeltonen#sbt-idea;1.5.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.github.mpeltonen#sbt-idea;1.5.1
+		tried /Users/AnhLH/.ivy2/local/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+	local: no ivy file found for com.github.mpeltonen#sbt-idea;1.5.1
+		tried /doesnotexist/repository/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for com.github.mpeltonen#sbt-idea;1.5.1
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml
+	activator-local: found md file for com.github.mpeltonen#sbt-idea;1.5.1
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/ivys/ivy.xml (1.5.1)
+	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.5.1!ivy.xml(ivy.original)
+	found com.github.mpeltonen#sbt-idea;1.5.1 in activator-local
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.1->commons-io#commons-io;2.0.1 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.1->commons-io#commons-io;2.0.1 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.1->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
+== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.1->commons-io#commons-io;2.0.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+== resolving dependencies com.typesafe.play#sbt-plugin;2.3.8->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.sbt#sbt-native-packager;0.7.4 ...
+Resolving com.typesafe.sbt#sbt-native-packager;0.7.4 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;0.7.4 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbt#sbt-native-packager;0.7.4 ...
+Resolving com.typesafe.sbt#sbt-native-packager;0.7.4 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;0.7.4 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-native-packager;0.7.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml
+	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-native-packager;0.7.4
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml (0.7.4)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/0.7.4/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbt#sbt-native-packager;0.7.4!ivy.xml(ivy.original) (2906ms)
+	found com.typesafe.sbt#sbt-native-packager;0.7.4 in sbt-plugin-releases
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.4.1 ...
+Resolving org.apache.commons#commons-compress;1.4.1 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.4.1 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
+	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.apache.commons#commons-compress;1.4.1 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.apache.commons#commons-compress;1.4.1 [compile->compile]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.tukaani#xz;1.0 ...
+Resolving org.tukaani#xz;1.0 ...
+sbt-chain: Checking cache for: dependency: org.tukaani#xz;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.tukaani#xz;1.0
+	found org.tukaani#xz;1.0 in sbt-chain
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.apache.commons#commons-compress;1.4.1 [compile->master]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.vafer#jdeb;1.3 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.vafer#jdeb;1.3 ...
+Resolving org.vafer#jdeb;1.3 ...
+sbt-chain: Checking cache for: dependency: org.vafer#jdeb;1.3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.vafer#jdeb;1.3 ...
+Resolving org.vafer#jdeb;1.3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.vafer#jdeb;1.3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.vafer#jdeb;1.3
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.vafer#jdeb;1.3
+		tried /Users/AnhLH/.ivy2/local/org.vafer/jdeb/1.3/ivys/ivy.xml
+	local: no ivy file found for org.vafer#jdeb;1.3
+		tried /doesnotexist/repository/org.vafer/jdeb/1.3/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.vafer#jdeb;1.3
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.vafer/jdeb/1.3/ivys/ivy.xml
+	activator-local: found md file for org.vafer#jdeb;1.3
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.vafer/jdeb/1.3/ivys/ivy.xml (1.3)
+	[NOT REQUIRED] org.vafer#jdeb;1.3!ivy.xml(ivy.original)
+	found org.vafer#jdeb;1.3 in activator-local
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.vafer#jdeb;1.3 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;0.7.4->org.vafer#jdeb;1.3 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving commons-io#commons-io;2.4 ...
+Resolving commons-io#commons-io;2.4 ...
+sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving commons-io#commons-io;2.4 ...
+Resolving commons-io#commons-io;2.4 ...
+sbt-chain-delegate: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for commons-io#commons-io;2.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for commons-io#commons-io;2.4
+		tried /Users/AnhLH/.ivy2/local/commons-io/commons-io/2.4/ivys/ivy.xml
+	local: no ivy file found for commons-io#commons-io;2.4
+		tried /doesnotexist/repository/commons-io/commons-io/2.4/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for commons-io#commons-io;2.4
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/commons-io/commons-io/2.4/ivys/ivy.xml
+	activator-local: found md file for commons-io#commons-io;2.4
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/commons-io/commons-io/2.4/ivys/ivy.xml (2.4)
+	[NOT REQUIRED] commons-io#commons-io;2.4!ivy.xml(ivy.original)
+	found commons-io#commons-io;2.4 in activator-local
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->compile(*)]
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->runtime(*)]
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->master(compile)]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master(*)]
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.7 ...
+Resolving org.apache.commons#commons-compress;1.7 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.7 ...
+Resolving org.apache.commons#commons-compress;1.7 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-compress;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried /Users/AnhLH/.ivy2/local/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	local: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried /doesnotexist/repository/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	activator-local: found md file for org.apache.commons#commons-compress;1.7
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.commons/commons-compress/1.7/ivys/ivy.xml (1.7)
+	[NOT REQUIRED] org.apache.commons#commons-compress;1.7!ivy.xml(ivy.original)
+	found org.apache.commons#commons-compress;1.7 in activator-local
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->master(*)]
+[A[2K[info] Resolving org.tukaani#xz;1.4 ...
+Resolving org.tukaani#xz;1.4 ...
+sbt-chain: Checking cache for: dependency: org.tukaani#xz;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.tukaani#xz;1.4 ...
+Resolving org.tukaani#xz;1.4 ...
+sbt-chain-delegate: Checking cache for: dependency: org.tukaani#xz;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.tukaani#xz;1.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.tukaani#xz;1.4
+		tried /Users/AnhLH/.ivy2/local/org.tukaani/xz/1.4/ivys/ivy.xml
+	local: no ivy file found for org.tukaani#xz;1.4
+		tried /doesnotexist/repository/org.tukaani/xz/1.4/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.tukaani#xz;1.4
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.tukaani/xz/1.4/ivys/ivy.xml
+	activator-local: found md file for org.tukaani#xz;1.4
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.tukaani/xz/1.4/ivys/ivy.xml (1.4)
+	[NOT REQUIRED] org.tukaani#xz;1.4!ivy.xml(ivy.original)
+	found org.tukaani#xz;1.4 in activator-local
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime(*)]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->compile]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->default(compile)]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.maven#maven-core;3.2.2 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.apache.maven#maven-core;3.2.2 ...
+Resolving org.apache.maven#maven-core;3.2.2 ...
+sbt-chain: Checking cache for: dependency: org.apache.maven#maven-core;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.maven#maven-core;3.2.2 ...
+Resolving org.apache.maven#maven-core;3.2.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.maven#maven-core;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.maven#maven-core;3.2.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.maven#maven-core;3.2.2
+		tried /Users/AnhLH/.ivy2/local/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+	local: no ivy file found for org.apache.maven#maven-core;3.2.2
+		tried /doesnotexist/repository/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.apache.maven#maven-core;3.2.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml
+	activator-local: found md file for org.apache.maven#maven-core;3.2.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-core/3.2.2/ivys/ivy.xml (3.2.2)
+	[NOT REQUIRED] org.apache.maven#maven-core;3.2.2!ivy.xml(ivy.original)
+	found org.apache.maven#maven-core;3.2.2 in activator-local
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.maven#maven-core;3.2.2 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-model;3.2.2 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.apache.maven#maven-model;3.2.2 ...
+Resolving org.apache.maven#maven-model;3.2.2 ...
+sbt-chain: Checking cache for: dependency: org.apache.maven#maven-model;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.maven#maven-model;3.2.2 ...
+Resolving org.apache.maven#maven-model;3.2.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.maven#maven-model;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.maven#maven-model;3.2.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.maven#maven-model;3.2.2
+		tried /Users/AnhLH/.ivy2/local/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+	local: no ivy file found for org.apache.maven#maven-model;3.2.2
+		tried /doesnotexist/repository/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.apache.maven#maven-model;3.2.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml
+	activator-local: found md file for org.apache.maven#maven-model;3.2.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-model/3.2.2/ivys/ivy.xml (3.2.2)
+	[NOT REQUIRED] org.apache.maven#maven-model;3.2.2!ivy.xml(ivy.original)
+	found org.apache.maven#maven-model;3.2.2 in activator-local
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-model;3.2.2 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-model;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-utils;3.0.17 ...
+Resolving org.codehaus.plexus#plexus-utils;3.0.17 ...
+sbt-chain: Checking cache for: dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-utils;3.0.17 ...
+Resolving org.codehaus.plexus#plexus-utils;3.0.17 ...
+sbt-chain-delegate: Checking cache for: dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.codehaus.plexus#plexus-utils;3.0.17
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.codehaus.plexus#plexus-utils;3.0.17
+		tried /Users/AnhLH/.ivy2/local/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+	local: no ivy file found for org.codehaus.plexus#plexus-utils;3.0.17
+		tried /doesnotexist/repository/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.codehaus.plexus#plexus-utils;3.0.17
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml
+	activator-local: found md file for org.codehaus.plexus#plexus-utils;3.0.17
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-utils/3.0.17/ivys/ivy.xml (3.0.17)
+	[NOT REQUIRED] org.codehaus.plexus#plexus-utils;3.0.17!ivy.xml(ivy.original)
+	found org.codehaus.plexus#plexus-utils;3.0.17 in activator-local
+== resolving dependencies org.apache.maven#maven-model;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-settings;3.2.2 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.apache.maven#maven-settings;3.2.2 ...
+Resolving org.apache.maven#maven-settings;3.2.2 ...
+sbt-chain: Checking cache for: dependency: org.apache.maven#maven-settings;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.maven#maven-settings;3.2.2 ...
+Resolving org.apache.maven#maven-settings;3.2.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.maven#maven-settings;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.maven#maven-settings;3.2.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.maven#maven-settings;3.2.2
+		tried /Users/AnhLH/.ivy2/local/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+	local: no ivy file found for org.apache.maven#maven-settings;3.2.2
+		tried /doesnotexist/repository/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.apache.maven#maven-settings;3.2.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml
+	activator-local: found md file for org.apache.maven#maven-settings;3.2.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-settings/3.2.2/ivys/ivy.xml (3.2.2)
+	[NOT REQUIRED] org.apache.maven#maven-settings;3.2.2!ivy.xml(ivy.original)
+	found org.apache.maven#maven-settings;3.2.2 in activator-local
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-settings;3.2.2 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->master(*)]
+== resolving dependencies org.apache.maven#maven-settings;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-settings-builder;3.2.2 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.apache.maven#maven-settings-builder;3.2.2 ...
+Resolving org.apache.maven#maven-settings-builder;3.2.2 ...
+sbt-chain: Checking cache for: dependency: org.apache.maven#maven-settings-builder;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.maven#maven-settings-builder;3.2.2 ...
+Resolving org.apache.maven#maven-settings-builder;3.2.2 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.maven#maven-settings-builder;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.maven#maven-settings-builder;3.2.2
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.maven#maven-settings-builder;3.2.2
+		tried /Users/AnhLH/.ivy2/local/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+	local: no ivy file found for org.apache.maven#maven-settings-builder;3.2.2
+		tried /doesnotexist/repository/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.apache.maven#maven-settings-builder;3.2.2
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml
+	activator-local: found md file for org.apache.maven#maven-settings-builder;3.2.2
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.apache.maven/maven-settings-builder/3.2.2/ivys/ivy.xml (3.2.2)
+	[NOT REQUIRED] org.apache.maven#maven-settings-builder;3.2.2!ivy.xml(ivy.original)
+	found org.apache.maven#maven-settings-builder;3.2.2 in activator-local
+== resolving dependencies org.apache.maven#maven-core;3.2.2->org.apache.maven#maven-settings-builder;3.2.2 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->master(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-utils;3.0.17 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-interpolation;1.19 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-interpolation;1.19 ...
+Resolving org.codehaus.plexus#plexus-interpolation;1.19 ...
+sbt-chain: Checking cache for: dependency: org.codehaus.plexus#plexus-interpolation;1.19 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-interpolation;1.19 ...
+Resolving org.codehaus.plexus#plexus-interpolation;1.19 ...
+sbt-chain-delegate: Checking cache for: dependency: org.codehaus.plexus#plexus-interpolation;1.19 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.codehaus.plexus#plexus-interpolation;1.19
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.codehaus.plexus#plexus-interpolation;1.19
+		tried /Users/AnhLH/.ivy2/local/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+	local: no ivy file found for org.codehaus.plexus#plexus-interpolation;1.19
+		tried /doesnotexist/repository/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.codehaus.plexus#plexus-interpolation;1.19
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml
+	activator-local: found md file for org.codehaus.plexus#plexus-interpolation;1.19
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-interpolation/1.19/ivys/ivy.xml (1.19)
+	[NOT REQUIRED] org.codehaus.plexus#plexus-interpolation;1.19!ivy.xml(ivy.original)
+	found org.codehaus.plexus#plexus-interpolation;1.19 in activator-local
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-interpolation;1.19 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-component-annotations;1.5.5 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...
+Resolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...
+sbt-chain: Checking cache for: dependency: org.codehaus.plexus#plexus-component-annotations;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...
+Resolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...
+sbt-chain-delegate: Checking cache for: dependency: org.codehaus.plexus#plexus-component-annotations;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.codehaus.plexus#plexus-component-annotations;1.5.5
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.codehaus.plexus#plexus-component-annotations;1.5.5
+		tried /Users/AnhLH/.ivy2/local/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+	local: no ivy file found for org.codehaus.plexus#plexus-component-annotations;1.5.5
+		tried /doesnotexist/repository/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.codehaus.plexus#plexus-component-annotations;1.5.5
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml
+	activator-local: found md file for org.codehaus.plexus#plexus-component-annotations;1.5.5
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.codehaus.plexus/plexus-component-annotations/1.5.5/ivys/ivy.xml (1.5.5)
+	[NOT REQUIRED] org.codehaus.plexus#plexus-component-annotations;1.5.5!ivy.xml(ivy.original)
+	found org.codehaus.plexus#plexus-component-annotations;1.5.5 in activator-local
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.codehaus.plexus#plexus-component-annotations;1.5.5 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.apache.maven#maven-settings;3.2.2 [compile->master(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.apache.maven#maven-settings;3.2.2 [compile->compile(*)]
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.sonatype.plexus#plexus-sec-dispatcher;1.3 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.3 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.apache.maven.plugin-tools#maven-plugin-annotations;3.2 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+dependency descriptor has been mediated: dependency: com.google.guava#guava;16.0.1 {compile=[default(compile)]} => dependency: com.google.guava#guava;14.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving org.sonatype.plexus#plexus-sec-dispatcher;1.3 ...
+Resolving org.sonatype.plexus#plexus-sec-dispatcher;1.3 ...
+sbt-chain: Checking cache for: dependency: org.sonatype.plexus#plexus-sec-dispatcher;1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.sonatype.plexus#plexus-sec-dispatcher;1.3 ...
+Resolving org.sonatype.plexus#plexus-sec-dispatcher;1.3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.sonatype.plexus#plexus-sec-dispatcher;1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.sonatype.plexus#plexus-sec-dispatcher;1.3
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.sonatype.plexus#plexus-sec-dispatcher;1.3
+		tried /Users/AnhLH/.ivy2/local/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+	local: no ivy file found for org.sonatype.plexus#plexus-sec-dispatcher;1.3
+		tried /doesnotexist/repository/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+	activator-launcher-local: no ivy file found for org.sonatype.plexus#plexus-sec-dispatcher;1.3
+		tried /Users/AnhLH/Documents/activator-1.3.2/repository/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml
+	activator-local: found md file for org.sonatype.plexus#plexus-sec-dispatcher;1.3
+		=> /Users/AnhLH/Documents/activator-1.3.2/repository/org.sonatype.plexus/plexus-sec-dispatcher/1.3/ivys/ivy.xml (1.3)
+	[NOT REQUIRED] org.sonatype.plexus#plexus-sec-dispatcher;1.3!ivy.xml(ivy.original)
+	found org.sonatype.plexus#plexus-sec-dispatcher;1.3 in activator-local
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.apache.maven#maven-settings-builder;3.2.2->org.sonatype.plexus#plexus-sec-dispatcher;1.3 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+== resolving dependencies org.sonatype.plexus#plexus-sec-dispatcher;1.3->org.codehaus.plexus#plexus-utils;3.0.17 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+== resolving dependencies org.sonatype.plexus#plexus-sec-dispatcher;1.3->org.codehaus.plexus#plexus-utils;3.0.17 [compile->compile(*)]
+== resolving dependencies org.sonatype.plexus#plexus-sec-dispatcher;1.3->org.sonatype.plexus#plexus-cipher;1.7 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.sonatype.plexus#plexus-cipher;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.sonatype.plexus#plexus-cipher;1.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-container-default;1.0-alpha-9-stable-1 {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.codehaus.plexus#plexus-container-default;1.0-beta-3.0.5 {provided=[compile(*), provided(*), runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-utils;3.0.17 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.codehaus.plexus#plexus-component-annotations;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.codehaus.plexus#plexus-component-annotations;1.5.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: junit#junit;3.8.2 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.5 {test=[runtime(*), master(*)]}
+dependency descriptor has been media
